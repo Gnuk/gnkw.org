@@ -1,47 +1,23 @@
-extends /layout-documentation
+extends /layout
 
 block title
-  title Tikui
+  title Anthony Rey
 
-block content
-  .container
-    h1 Tikui pattern library
-
-    h2 Use
-
-    p Import style using #[strong &lt;link&gt;] tag and replace #[strong {DOMAIN}] with the current domain:
-
-    p
-      em HTML
-      pre
-        code.language-html.
-          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;
-
-          &lt;link rel=&quot;stylesheet&quot; href=&quot;{DOMAIN}/tikui.css&quot; /&gt;
-
-    p
-      em Pug
-      pre
-        code.language-pug.
-          meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-
-          link(rel='stylesheet' href='{DOMAIN}/tikui.css')
-
-    h2 Documentation
-
-    p The Style have an #[a(href='http://atomicdesign.bradfrost.com' target='_blank') Atomic Design] organization.
-
-    .row
-      .col
-        .card
-          a.card-body(href='/atom/atom.html') Atoms
-      .col
-        .card
-          a.card-body(href='/molecule/molecule.html') Molecules
-      .col
-        .card
-          a.card-body(href='/organism/organism.html') Organisms
-    .row.mt-4.mb-4
-      .col
-        .card
-          a.card-body(href='/template/template.html') Templates
+block body
+  h1 Anthony Rey
+  p Passionate Software Crafter
+  section
+    h2 about:me
+    p I'm just a developer, I code visual interfaces using SCSS and Pug for graphics and TypeScript for dynamic. I like #[a(href='http://blog.ippon.fr/2021/02/08/type-driven-development/') TDD] but also #[a(href='https://en.wikipedia.org/wiki/Test-driven_development') TDD] and #[a(href='https://en.wikipedia.org/wiki/Domain-driven_design') DDD]. You can find me on #[a(href='https://www.linkedin.com/in/anthonyrey/') Linkedin] to read my CV.
+  section
+    h2 about:articles
+    p I wrote #[a(href='https://blog.ippon.fr/author/anthony/') some blog posts] on Ippon Technologies company blog, you may like to read them.
+  section
+    h2 about:lives
+    p I like to share knowledge through #[a(href='https://codingdojo.org/kata/') kata] resolutions or anything around software creation, you may watch me sometimes on #[a(href='https://www.twitch.tv/ippontech') ippontech] Twitch channel (replays on #[a(href='https://www.youtube.com/c/ippontechtv/videos') YouTube]).
+  section
+    h2 about:events
+    p I encourage you to go to city communities around software, especially some of them like #[a(href='https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon/') Lyon Software Crafters] group.
+  section
+    h2 about:tikui
+    p This website is created using #[a(href='https://www.tikui.org') Tikui], it's also a tool i've created to help developers to implement graphical web interfaces.
